@@ -1,0 +1,20 @@
+<head><title>
+Tablas de multiplicar
+</title></head>
+<body bgcolor="#777777" text="#ffff00" topmargin=100><center><h1>
+Tablas de multiplicar<br>
+<?php
+for($ciclo=1;$ciclo<=10;$ciclo++)
+{
+echo "<table border=2>";
+echo "<tr align=center><td colspan=5>Tabla de multiplicar del ".$ciclo.":</td></tr>";
+
+for($ciclo2=1;$ciclo2<=10;$ciclo2++)
+{
+$mult=$ciclo*$ciclo2;
+echo "<tr align=center><td>".$ciclo."</td><td> X </td><td>".$ciclo2."</td><td> = </td><td>".$mult."</td></tr>";
+}
+echo "</table>";
+}
+?>
+</h1></center></body>
